@@ -517,5 +517,161 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 /* ============== /End of Desktop Section 1 ============== */
+/* ============== Mobile Section 2 ============== */
+
+.advantage-title,
+.team-title,
+.portfolio-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2E2F42;
+}
+
+   .advantage-text {
+       font-size: 16px;
+       line-height: 1.5;
+       /* 150% */
+       letter-spacing: 0.02em;
+       color: #434455;
+   }
+
+   .advantage-text-title {
+       margin-bottom: 8px;
+   }
+   
+   .advantage-list {
+       display: flex;
+   }
+
+@media screen and (max-width: 1157px) {
+    .advantage-svg {
+        display: none;
+    }
+
+    .advantage-text-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+            /* 111.111% */
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        }
+
+    .advantage-text {
+        font-weight: 500;
+    }
+
+    .advantage-list {
+        gap: 72px;
+        padding: 96px 0;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    .advantage-text-title {
+        text-align: center;
+        }
+    
+    .advantage-list {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+}
+
+
+/* ============== /End of Mobile Section 2 ============== */
+/* ============== Tablet Section 2 ============== */
+@media screen and (min-width: 768px) {
+    .advantage-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 0;
+    }
+
+    .advantage-item {
+        width: calc((100% - 24px)/2);
+    }
+
+}
+
+
+/* ============== /End of Tablet Section 2 ============== */
+/* ============== Desktop Section 2 ============== */
+@media screen and (min-width: 1158px) {
+    .advantage-text-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+            /* 120% */
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+
+    .advantage-list {
+       gap: 24px;
+       padding: 120px 0;
+ }
+    
+    .advantage-item {
+        width: calc((100% - 72px)/4);
+    }
+
+    .advantage-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+        background-color: #F4F4FD;
+        fill: #2E2F42;
+        margin-bottom: 8px;
+    }
+}
+
+/* ============== /End of Desktop Section 2 ============== */
+/* ============== Mobile Section 3 ============== */
+@media screen and (max-width: 767px) {
+
+
+
+}
+
+
+
+
+/* ============== /End of Mobile Section 3 ============== */
+/* ============== Tablet Section 3 ============== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {}
+
+@media screen and (min-width: 768px) {
+
+
+
+}
+
+
+
+/* ============== /End of Tablet Section 3 ============== */
+/* ============== Desktop Section 3 ============== */
+@media screen and (min-width: 1158px) {
+
+
+
+    
+}
+
+
+
+
+/* ============== /End of Desktop Section 3 ============== */
 
 
