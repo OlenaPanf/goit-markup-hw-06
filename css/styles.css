@@ -376,22 +376,145 @@ body {
 /* ============== /END OF DESKTOP HEADER STYLES ============== */
 
 /* ============== Mobile Section 1 ============== */
+.first-section,
+.page-footer {
+    background-color: #2E2F42;
+}
+
+.first-section{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-button:hover,
+.main-button:focus {
+    background: #404BBF;
+}
 
 
+@media screen and (max-width: 767px) {
+    .first-section {
+        padding: 72px 0;
+        max-width: 320px;
+        height: 432px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/img10-mobile.jpg);
+          
+    }
+
+    .main-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: capitalize;
+            max-width: 169px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 72px;
+
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-mobile@2x.jpg);
+    }
+}
 
 
 
 /* ============== /End of Mobile Section 1 ============== */
 
 /* ============== Tablet Section 1 ============== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .main-title {
+            margin-bottom: 36px;
+        }
+}
 
+@media screen and (min-width: 768px) {
+    .first-section {
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-tablet.jpg);        
+    }
+    
+    .main-title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-align: center;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/img10-tablet@2x.jpg);
+    }
+}
 
 /* ============== /End of Tablet Section 1 ============== */
 
 /* ============== Desktop Section 1 ============== */
+@media screen and (min-width: 1158px) {
+    .first-section {
+            padding: 188px 0;
+            max-width: 1440px;
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/img10-desktop.jpg);
+            
+        }
 
+    .main-title {
+            margin-bottom: 48px;
+        }
+}
 
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/img10-desktop@2x.jpg);
+    }
+}
 
 /* ============== /End of Desktop Section 1 ============== */
 
