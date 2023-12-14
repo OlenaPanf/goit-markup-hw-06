@@ -424,15 +424,6 @@ body {
     color: #F4F4FD;
 }
 
-.footer-text {
-    color: #F4F4FD;
-    max-width: 264px;
-}
-
-.page-footer {
-    padding: 100px 0;
-}
-
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -444,6 +435,15 @@ body {
     display: inline-block;
     height: 24px;
     margin-bottom: 16px;
+}
+
+.footer-text {
+    color: #F4F4FD;
+    max-width: 264px;
+}
+
+.page-footer {
+    padding: 100px 0;
 }
 
 .page-footer .container {

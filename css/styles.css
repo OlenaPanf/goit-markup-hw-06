@@ -888,7 +888,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .portfolio-card {
         width: 288px;
     }
-    
+
 }
 
 /* ============== /End of Mobile Section 4 ============== */
@@ -944,3 +944,272 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 /* ============== /End of Desktop Section 4 ============== */
+/* ============== Mobile Footer ============== */
+.studio-white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    height: 24px;
+}
+
+
+.footer-text {
+    color: #F4F4FD;
+    margin-top: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-icons-text,
+.footer-subscribe-text {
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-icon {
+    fill: #F4F4FD;
+    margin: 8px;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: #31D0AA;
+}
+
+.footer-subscribe-input {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    /* 200% */
+    letter-spacing: 0.04em;
+}
+
+.footer-subscribe-input::placeholder {
+    color: #FFFFFF;
+}
+
+.footer-subscribe-btn {
+    display: inline-flex;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background: #4D5AE5;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background: #404BBF;
+}
+
+.footer-subscribe-btn-icon {
+    fill: #FFFFFF;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 1157px) {
+    .footer-container {
+        padding: 96px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+       display: flex;
+       justify-content: center;
+    }
+    
+    .footer-logotype {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .footer-text {
+       max-width: 288px;
+       margin-bottom: 72px;
+    }
+
+    .footer-icons-text,
+    .footer-subscribe-text {
+       text-align: center;
+    }
+
+
+    .footer-social-list {
+       margin-bottom: 72px;
+    }
+
+    .footer-subscribe-form {
+       text-align: center;
+    }
+
+    .footer-subscribe-input {
+       width: 288px;
+       margin-bottom: 16px;
+       opacity: 0.3;
+    }
+
+    .footer-subscribe-input::placeholder {
+       opacity: 0.6;
+    }
+        
+}
+
+
+/* ============== /End of Mobile Footer ============== */
+/* ============== Tablet Footer ============== */
+@media screen and (min-width: 768px) {
+    
+    .footer-container {
+        width: 584px;
+        display: flex;
+        align-items: first baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        }
+    
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-subscribe-form {
+       display: flex;
+       gap: 24px;
+    }
+
+    .footer-subscribe-input {
+        width: 264px;
+        opacity: 0.3;
+    }
+
+    .footer-subscribe-input::placeholder {
+        opacity: 0.6;
+    }
+}
+
+
+
+/* ============== /End of Tablet Footer ============== */
+/* ============== Desktop Footer ============== */
+@media screen and (min-width: 1158px) {
+.page-footer {
+        padding: 100px 0;
+    }
+
+.footer-container {
+    width: 1158px;
+}
+
+.logo-footer {
+    display: inline-block;
+}
+
+.page-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logotype {
+    margin-right: 120px;
+}
+
+.footer-icons {
+    margin-right: auto;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-input {
+    opacity: 1;
+}
+
+.footer-subscribe-input::placeholder {
+    opacity: 1;
+}
+
+}
+
+
+
+/* ============== /End of Desktop Footer ============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
