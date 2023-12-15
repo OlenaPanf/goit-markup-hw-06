@@ -61,7 +61,7 @@ body {
     margin-right: auto;
 }
 
-/* ============== MOBILE HEADER STYLES ============== */
+/* ============== HEADER COMMON STYLES ============== */
 .menu {
     display: none;
 }
@@ -96,292 +96,13 @@ body {
     color: #2E2F42;
 }
 
-
-
-@media screen and (max-width: 767px) {
-    .page-header {
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
-    
-    .mobile-menu-open-btn {
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            line-height: 0;
-            fill: #2F2F37;
-        }
-    
-        .mobile-menu-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 99999999;
-            width: 100%;
-            height: 100%;
-            background-color: #FFF;
-            transform: translateX(100%);
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .mobile-menu-wrapper.is-open {
-            transform: translateX(0%);
-        }
-    
-        .mobile-menu-container {
-            position: relative;
-            padding: 72px 24px 40px 16px;
-        }
-    
-        .mobile-menu-close-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 24px;
-            right: 8px;
-            background-color: transparent;
-            padding: 0;
-            line-height: 0;
-            width: 24px;
-            height: 24px;
-            fill: #2E2F42;
-            border-radius: 50%;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-    
-        .mobile-menu-close-btn:hover,
-        .mobile-menu-close-btn:focus {
-            fill: #FFFFFF;
-            background-color: #404BBF;
-            border: none;
-        }
-    
-        .mobile-menu-navigation {
-            margin-bottom: 168px;
-            gap: 40px;
-        }
-    
-        .mobile-menu-navigation-list {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 40px;
-        }
-    
-        .mobile-menu-navigation-link {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.11;
-            /* 111.111% */
-            letter-spacing: 0.02em;
-            text-transform: capitalize;
-            color: #2E2F42;
-        }
-    
-        .accent-ocean {
-            color: #404BBF;
-        }
-    
-        .mobile-menu-contacts {
-            margin-bottom: 48px;
-        }
-    
-        .mobile-menu-contacts-list {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 24px;
-        }
-    
-        .mobile-menu-contacts-link {
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.2;
-            /* 120% */
-            letter-spacing: 0.02em;
-            color: #434455;
-        }
-    
-        .accent-iris {
-            color: #4D5AE5;
-        }
-    
-        .mobile-menu-social-list {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-    
-        .mobile-menu-social-list-item {
-            width: 40px;
-            height: 40px;
-        }
-    
-        .mobile-menu-social-list-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-color: #4D5AE5;
-            width: 100%;
-            height: 100%;
-        }
-    
-        .mobile-menu-social-list-icon {
-            fill: #F4F4FD;
-            margin: 8px;
-        }
-}
-
-/* ============== /END OF MOBILE HEADER STYLES ============== */
-
-/* ============== TABLET HEADER STYLES ============== */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
-    .mobile-menu-open-btn {
-        display: none;
-    }
-
-    .mobile-menu-wrapper {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        line-height: 0;
-    }
-
-    .contacts {
-        display: flex;
-    }
-
-    .page-header {
-        padding: 0;
-        border-bottom: 1px solid #E7E9FC;
-        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-    }
-
-    .page-navigation {
-        display: flex;
-        align-items: center;
-    }
-
-    .menu-link {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        /* 150% */
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-        display: block;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .menu-link:hover,
-    .menu-link:focus {
-        color: #404BBF;
-    }
-
-    .current {
-        position: relative;
-        color: #404BBF;
-    }
-
-    .menu-link.current::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: #404BBF;
-        margin-top: 20px;
-    }
-
-    .contacts-link:hover,
-    .contacts-link:focus {
-        color: #404BBF;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-    .menu {
-        margin-left: 120px;
-    }
-    
-    .contacts-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .contacts-link {
-        font-size: 12px;
-        font-style: normal;
-        line-height: 1.17;
-        /* 116.667% */
-        letter-spacing: 0.04em;
-        color: #434455;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-/* ============== /END OF TABLET HEADER STYLES ============== */
-/* ============== DESKTOP HEADER STYLES ============== */
-
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-        .page-header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        .menu {
-            margin-left: 76px;
-        }
-    
-        .contacts-list {
-            display: flex;
-            gap: 40px;
-        }
-    
-        .contacts-link {
-            font-size: 16px;
-            line-height: 1.5;
-            /* 150% */
-            letter-spacing: 0.02em;
-            color: #434455;
-            font-style: normal;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-}
-/* ============== /END OF DESKTOP HEADER STYLES ============== */
-
-/* ============== Mobile Section 1 ============== */
+/* ============== Section 1 COMMON STYLES ============== */
 .first-section,
 .page-footer {
     background-color: #2E2F42;
 }
 
-.first-section{
+.first-section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -413,112 +134,7 @@ body {
     background: #404BBF;
 }
 
-
-@media screen and (max-width: 767px) {
-    .first-section {
-        padding: 72px 0;
-        max-width: 320px;
-        height: 432px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/img10-mobile.jpg);
-          
-    }
-
-    .main-title {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.11;
-            letter-spacing: 0.02em;
-            color: #FFFFFF;
-            text-align: center;
-            text-transform: capitalize;
-            max-width: 169px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 72px;
-
-    }
-}
-
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px),
-screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .first-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../images/img10-mobile@2x.jpg);
-    }
-}
-
-
-
-/* ============== /End of Mobile Section 1 ============== */
-
-/* ============== Tablet Section 1 ============== */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-    .main-title {
-            margin-bottom: 36px;
-        }
-}
-
-@media screen and (min-width: 768px) {
-    .first-section {
-        padding: 112px 0;
-        max-width: 768px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../images/img10-tablet.jpg);        
-    }
-    
-    .main-title {
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
-        text-align: center;
-        max-width: 496px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .first-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/img10-tablet@2x.jpg);
-    }
-}
-
-/* ============== /End of Tablet Section 1 ============== */
-
-/* ============== Desktop Section 1 ============== */
-@media screen and (min-width: 1158px) {
-    .first-section {
-            padding: 188px 0;
-            max-width: 1440px;
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/img10-desktop.jpg);
-            
-        }
-
-    .main-title {
-            margin-bottom: 48px;
-        }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-screen and (min-resolution: 2dppx) and (min-width: 1158px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-    .first-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/img10-desktop@2x.jpg);
-    }
-}
-
-/* ============== /End of Desktop Section 1 ============== */
-/* ============== Mobile Section 2 ============== */
-
+/* ============== Section 2 COMMON STYLES ============== */
 .advantage-title,
 .team-title,
 .portfolio-title {
@@ -532,113 +148,23 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     color: #2E2F42;
 }
 
-   .advantage-text {
-       font-size: 16px;
-       line-height: 1.5;
-       /* 150% */
-       letter-spacing: 0.02em;
-       color: #434455;
-   }
-
-   .advantage-text-title {
-       margin-bottom: 8px;
-   }
-   
-   .advantage-list {
-       display: flex;
-   }
-
-@media screen and (max-width: 1157px) {
-    .advantage-svg {
-        display: none;
-    }
-
-    .advantage-text-title {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-            /* 111.111% */
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #2E2F42;
-        }
-
-    .advantage-text {
-        font-weight: 500;
-    }
-
-    .advantage-list {
-        gap: 72px;
-        padding: 96px 0;
-        }
+.advantage-text {
+    font-size: 16px;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
-@media screen and (max-width: 767px) {
-    .advantage-text-title {
-        text-align: center;
-        }
-    
-    .advantage-list {
-        flex-direction: column;
-        align-items: flex-start;
-        }
+.advantage-text-title {
+    margin-bottom: 8px;
 }
 
-
-/* ============== /End of Mobile Section 2 ============== */
-/* ============== Tablet Section 2 ============== */
-@media screen and (min-width: 768px) {
-    .advantage-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-        padding-left: 0;
-    }
-
-    .advantage-item {
-        width: calc((100% - 24px)/2);
-    }
-
+.advantage-list {
+    display: flex;
 }
 
-
-/* ============== /End of Tablet Section 2 ============== */
-/* ============== Desktop Section 2 ============== */
-@media screen and (min-width: 1158px) {
-    .advantage-text-title {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-            /* 120% */
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-
-    .advantage-list {
-       gap: 24px;
-       padding: 120px 0;
- }
-    
-    .advantage-item {
-        width: calc((100% - 72px)/4);
-    }
-
-    .advantage-svg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        border-radius: 4px;
-        border: 1px solid #8E8F99;
-        background-color: #F4F4FD;
-        fill: #2E2F42;
-        margin-bottom: 8px;
-    }
-}
-
-/* ============== /End of Desktop Section 2 ============== */
-/* ============== Mobile Section 3 ============== */
+/* ============== Section 3 COMMON STYLES ============== */
 .third-section {
     background-color: #F4F4FD;
 }
@@ -670,7 +196,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-            /* 120% */
+    /* 120% */
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
@@ -680,7 +206,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .team-text {
     font-size: 16px;
     line-height: 1.5;
-        /* 150% */
+    /* 150% */
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
@@ -725,77 +251,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     background-color: #404BBF;
 }
 
-@media screen and (max-width: 1157px) {
-    .third-section {
-        padding: 96px 0;
-    }
-
-    
-}
-
-@media screen and (max-width: 767px) {
-    .team-container {
-        width: 296рх;
-    }
-    
-    .team-list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;      
-        gap: 72px;
-    }
-
-    
-
-}
-
-
-
-/* ============== /End of Mobile Section 3 ============== */
-/* ============== Tablet Section 3 ============== */
-@media screen and (min-width: 768px) and (max-width: 1157px) {}
-
-@media screen and (min-width: 768px) {
-    .team-container {
-        min-width: 584px;
-    }
-    
-    .team-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        column-gap: 24px;
-        row-gap: 64px;
-    }
-
-    .team-item {
-        width: calc((100% - 24px)/2);
-    }
-
-}
-
-
-
-/* ============== /End of Tablet Section 3 ============== */
-/* ============== Desktop Section 3 ============== */
-@media screen and (min-width: 1158px) {
-    .third-section {
-        padding: 120px 0;
-    }
-   
-    .team-list {
-        gap: 24px;
-    }
-
-    .team-item {
-        width: calc((100% - 72px)/4);   
-    }
-}
-
-
-/* ============== /End of Desktop Section 3 ============== */
-/* ============== Mobile Section 4 ============== */
+/* ============== Section 4 COMMON STYLES ============== */
 .portfolio-title {
     margin-left: auto;
     margin-right: auto;
@@ -827,7 +283,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-}    
+}
 
 .portfolio-text {
     font-size: 16px;
@@ -860,91 +316,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     transform: translateY(0%);
 }
 
-@media screen and (max-width: 1157px) {
-    .fourth-section {
-       padding: 96px 0;
-    }
-
-    .portfolio-card {
-       border: 1px solid #F4F4FD;
-       box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    }
-}
-@media screen and (max-width: 767px) {
-    .portfolio-container {
-        width: 320рх;
-    }
-
-    .portfolio-list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 48px;
-    }
-    .portfolio-list-item {
-        max-width: 288px;
-    }
-
-    .portfolio-card {
-        width: 288px;
-    }
-
-}
-
-/* ============== /End of Mobile Section 4 ============== */
-/* ============== Tablet Section 4 ============== */
-@media screen and (min-width: 768px) {
-
-.portfolio-container {
-        min-width: 768px;
-    }
-
-.portfolio-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 24px;
-    row-gap: 72px;
-}
-
-.portfolio-list-item {
-    width: calc((100% - 24px)/2);
-}
-
-.portfolio-card {
-    width: 356px;
-}
-
-}
-
-
-/* ============== /End of Tablet Section 4 ============== */
-/* ============== Desktop Section 4 ============== */
-@media screen and (min-width: 1158px) {
-
-    .fourth-section {
-        padding: 120px 0;
-    }
-
-    .portfolio-list {
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-    }
-    .portfolio-list-item {
-        width: calc((100% - 48px) / 3);
-    }
-
-    .portfolio-card {
-        width: 360px;
-        border: 1px solid #e7e9fc;
-    }
-
-}
-
-/* ============== /End of Desktop Section 4 ============== */
-/* ============== Mobile Footer ============== */
+/* ============== Footer COMMON STYLES ============== */
 .studio-white {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -1062,141 +434,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     margin-left: 16px;
 }
 
-@media screen and (max-width: 1157px) {
-    .footer-container {
-        padding: 96px 0;
-    }
-}
-@media screen and (max-width: 767px) {
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-footer {
-       display: flex;
-       justify-content: center;
-    }
-    
-    .footer-logotype {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
-
-    .footer-text {
-       max-width: 288px;
-       margin-bottom: 72px;
-    }
-
-    .footer-icons-text,
-    .footer-subscribe-text {
-       text-align: center;
-    }
-
-
-    .footer-social-list {
-       margin-bottom: 72px;
-    }
-
-    .footer-subscribe-form {
-       text-align: center;
-    }
-
-    .footer-subscribe-input {
-       width: 288px;
-       margin-bottom: 16px;
-       opacity: 0.3;
-    }
-
-    .footer-subscribe-input::placeholder {
-       opacity: 0.6;
-    }
-        
-}
-
-
-/* ============== /End of Mobile Footer ============== */
-/* ============== Tablet Footer ============== */
-@media screen and (min-width: 768px) {
-    
-    .footer-container {
-        width: 584px;
-        display: flex;
-        align-items: first baseline;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-        }
-    
-    .footer-text {
-        max-width: 264px;
-    }
-
-    .footer-subscribe-form {
-       display: flex;
-       gap: 24px;
-    }
-
-    .footer-subscribe-input {
-        width: 264px;
-        opacity: 0.3;
-    }
-
-    .footer-subscribe-input::placeholder {
-        opacity: 0.6;
-    }
-}
-
-
-
-/* ============== /End of Tablet Footer ============== */
-/* ============== Desktop Footer ============== */
-@media screen and (min-width: 1158px) {
-.page-footer {
-        padding: 100px 0;
-    }
-
-.footer-container {
-    width: 1158px;
-}
-
-.logo-footer {
-    display: inline-block;
-}
-
-.page-footer .container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-logotype {
-    margin-right: 120px;
-}
-
-.footer-icons {
-    margin-right: auto;
-}
-
-.footer-subscribe-form {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-subscribe-input {
-    opacity: 1;
-}
-
-.footer-subscribe-input::placeholder {
-    opacity: 1;
-}
-
-}
-
-/* ============== /End of Desktop Footer ============== */
-/* ============== Mobile Backdrop ============== */
+/* ============== Backdrop and Modal Window COMMON STYLES ============== */
 .backdrop {
     position: fixed;
     top: 0;
@@ -1429,44 +667,774 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 
+/* ============== MOBILE HEADER STYLES ============== */
+
 @media screen and (max-width: 767px) {
-.modal {
+    .page-header {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    
+    .mobile-menu-open-btn {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+            fill: #2F2F37;
+        }
+    
+        .mobile-menu-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999999;
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            transform: translateX(100%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .mobile-menu-wrapper.is-open {
+            transform: translateX(0%);
+        }
+    
+        .mobile-menu-container {
+            position: relative;
+            padding: 72px 24px 40px 16px;
+        }
+    
+        .mobile-menu-close-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 24px;
+            right: 8px;
+            background-color: transparent;
+            padding: 0;
+            line-height: 0;
+            width: 24px;
+            height: 24px;
+            fill: #2E2F42;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    
+        .mobile-menu-close-btn:hover,
+        .mobile-menu-close-btn:focus {
+            fill: #FFFFFF;
+            background-color: #404BBF;
+            border: none;
+        }
+    
+        .mobile-menu-navigation {
+            margin-bottom: 168px;
+            gap: 40px;
+        }
+    
+        .mobile-menu-navigation-list {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+        .mobile-menu-navigation-link {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            /* 111.111% */
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: #2E2F42;
+        }
+    
+        .accent-ocean {
+            color: #404BBF;
+        }
+    
+        .mobile-menu-contacts {
+            margin-bottom: 48px;
+        }
+    
+        .mobile-menu-contacts-list {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 24px;
+        }
+    
+        .mobile-menu-contacts-link {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.2;
+            /* 120% */
+            letter-spacing: 0.02em;
+            color: #434455;
+        }
+    
+        .accent-iris {
+            color: #4D5AE5;
+        }
+    
+        .mobile-menu-social-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+    
+        .mobile-menu-social-list-item {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .mobile-menu-social-list-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #4D5AE5;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .mobile-menu-social-list-icon {
+            fill: #F4F4FD;
+            margin: 8px;
+        }
+}
+
+/* ============== Mobile Section 1 ============== */
+
+@media screen and (max-width: 767px) {
+    .first-section {
+        padding: 72px 0;
+        max-width: 320px;
+        height: 432px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-mobile.jpg);
+
+    }
+
+    .main-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: capitalize;
+        max-width: 169px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-mobile@2x.jpg);
+    }
+}
+
+/* ============== Mobile Section 2 ============== */
+
+@media screen and (max-width: 1157px) {
+    .advantage-svg {
+        display: none;
+    }
+
+    .advantage-text-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        /* 111.111% */
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+
+    .advantage-text {
+        font-weight: 500;
+    }
+
+    .advantage-list {
+        gap: 72px;
+        padding: 96px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantage-text-title {
+        text-align: center;
+    }
+
+    .advantage-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ============== Mobile Section 3 ============== */
+
+@media screen and (max-width: 1157px) {
+    .third-section {
+        padding: 96px 0;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .team-container {
+        width: 296рх;
+    }
+
+    .team-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 72px;
+    }
+}
+
+/* ============== Mobile Section 4 ============== */
+@media screen and (max-width: 1157px) {
+    .fourth-section {
+        padding: 96px 0;
+    }
+
+    .portfolio-card {
+        border: 1px solid #F4F4FD;
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-container {
+        width: 320рх;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .portfolio-list-item {
+        max-width: 288px;
+    }
+
+    .portfolio-card {
+        width: 288px;
+    }
+}
+
+/* ============== Mobile Footer ============== */
+@media screen and (max-width: 1157px) {
+    .footer-container {
+        padding: 96px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-logotype {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        max-width: 288px;
+        margin-bottom: 72px;
+    }
+
+    .footer-icons-text,
+    .footer-subscribe-text {
+        text-align: center;
+    }
+
+
+    .footer-social-list {
+        margin-bottom: 72px;
+    }
+
+    .footer-subscribe-form {
+        text-align: center;
+    }
+
+    .footer-subscribe-input {
+        width: 288px;
+        margin-bottom: 16px;
+        opacity: 0.3;
+    }
+
+    .footer-subscribe-input::placeholder {
+        opacity: 0.6;
+    }
+}
+
+/* ============== Mobile Backdrop ============== */
+@media screen and (max-width: 767px) {
+    .modal {
         width: 288px;
         min-height: 632px;
         padding: 72px 16px 24px 16px;
     }
 
-.connection-form-description {
-    width: 256px;
-}
+    .connection-form-description {
+        width: 256px;
+    }
 
-.connection-form-field-input {
-    padding-left: 34px;
-}
-.connection-form-checkbox-label {
-    display: flex;
-    align-items: center;
-}
+    .connection-form-field-input {
+        padding-left: 34px;
+    }
 
+    .connection-form-checkbox-label {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* ============== /End of Mobile Backdrop ============== */
+
+
+
+
+/* ============== TABLET HEADER STYLES ============== */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .mobile-menu-open-btn {
+        display: none;
+    }
+
+    .mobile-menu-wrapper {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        line-height: 0;
+    }
+
+    .contacts {
+        display: flex;
+    }
+
+    .page-header {
+        padding: 0;
+        border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    }
+
+    .page-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        /* 150% */
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .menu-link:hover,
+    .menu-link:focus {
+        color: #404BBF;
+    }
+
+    .current {
+        position: relative;
+        color: #404BBF;
+    }
+
+    .menu-link.current::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404BBF;
+        margin-top: 20px;
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404BBF;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .menu {
+        margin-left: 120px;
+    }
+    
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contacts-link {
+        font-size: 12px;
+        font-style: normal;
+        line-height: 1.17;
+        /* 116.667% */
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ============== Tablet Section 1 ============== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .main-title {
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .first-section {
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-tablet.jpg);
+    }
+
+    .main-title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-align: center;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/img10-tablet@2x.jpg);
+    }
+}
+
+/* ============== Tablet Section 2 ============== */
+@media screen and (min-width: 768px) {
+    .advantage-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 0;
+    }
+
+    .advantage-item {
+        width: calc((100% - 24px)/2);
+    }
+}
+/* ============== Tablet Section 3 ============== */
+
+@media screen and (min-width: 768px) {
+    .team-container {
+        min-width: 584px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px)/2);
+    }
+}
+/* ============== Tablet Section 4 ============== */
+@media screen and (min-width: 768px) {
+    .portfolio-container {
+        min-width: 768px;
+    }
+
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 24px)/2);
+    }
+
+    .portfolio-card {
+        width: 356px;
+    }
+}
+
+/* ============== Tablet Footer ============== */
+@media screen and (min-width: 768px) {
+
+    .footer-container {
+        width: 584px;
+        display: flex;
+        align-items: first baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-subscribe-form {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-subscribe-input {
+        width: 264px;
+        opacity: 0.3;
+    }
+
+    .footer-subscribe-input::placeholder {
+        opacity: 0.6;
+    }
+}
+
 /* ============== Tablet Backdrop ============== */
 
 @media screen and (min-width: 768px) {
-.modal {
+    .modal {
         width: 408px;
         min-height: 584px;
         padding: 72px 25px 24px 23px;
     }
 
-.connection-form-description {
+    .connection-form-description {
         width: 360px;
-}
-
+    }
 }
 
 /* ============== /End of Tablet Backdrop ============== */
+
+
+
+
+/* ============== DESKTOP HEADER STYLES ============== */
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+        .page-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .menu {
+            margin-left: 76px;
+        }
+    
+        .contacts-list {
+            display: flex;
+            gap: 40px;
+        }
+    
+        .contacts-link {
+            font-size: 16px;
+            line-height: 1.5;
+            /* 150% */
+            letter-spacing: 0.02em;
+            color: #434455;
+            font-style: normal;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+/* ============== Desktop Section 1 ============== */
+@media screen and (min-width: 1158px) {
+    .first-section {
+            padding: 188px 0;
+            max-width: 1440px;
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/img10-desktop.jpg);
+            
+        }
+
+    .main-title {
+            margin-bottom: 48px;
+        }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .first-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/img10-desktop@2x.jpg);
+    }
+}
+
+/* ============== Desktop Section 2 ============== */
+@media screen and (min-width: 1158px) {
+    .advantage-text-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+            /* 120% */
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+
+    .advantage-list {
+       gap: 24px;
+       padding: 120px 0;
+ }
+    
+    .advantage-item {
+        width: calc((100% - 72px)/4);
+    }
+
+    .advantage-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+        background-color: #F4F4FD;
+        fill: #2E2F42;
+        margin-bottom: 8px;
+    }
+}
+
+/* ============== Desktop Section 3 ============== */
+@media screen and (min-width: 1158px) {
+    .third-section {
+        padding: 120px 0;
+    }
+   
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px)/4);   
+    }
+}
+
+/* ============== Desktop Section 4 ============== */
+@media screen and (min-width: 1158px) {
+
+    .fourth-section {
+        padding: 120px 0;
+    }
+
+    .portfolio-list {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+    .portfolio-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio-card {
+        width: 360px;
+        border: 1px solid #e7e9fc;
+    }
+}
+
+/* ============== Desktop Footer ============== */
+@media screen and (min-width: 1158px) {
+.page-footer {
+        padding: 100px 0;
+    }
+
+.footer-container {
+    width: 1158px;
+}
+
+.logo-footer {
+    display: inline-block;
+}
+
+.page-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logotype {
+    margin-right: 120px;
+}
+
+.footer-icons {
+    margin-right: auto;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-input {
+    opacity: 1;
+}
+
+.footer-subscribe-input::placeholder {
+    opacity: 1;
+}
+}
+
 /* ============== Desktop Backdrop ============== */
 @media screen and (min-width: 1158px) {
     .modal {
@@ -1476,10 +1444,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
         padding-left: 38px;
     }
 }
-
-
-
-/* ============== /End of Desktop Backdrop ============== */
 
 
 
